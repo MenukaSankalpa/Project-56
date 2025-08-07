@@ -1,0 +1,4 @@
+requests
+cryptography
+pytest                     # For testing
+
