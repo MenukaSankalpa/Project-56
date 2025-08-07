@@ -1,0 +1,29 @@
+❗ Let's Build Your Account Switcher (Python Version)
+
+A simple and flexible Python-based account switcher for managing multiple user profiles across applications or environments. Ideal for developers, testers, and sysadmins who need to switch between credentials quickly.
+
+# 🔄 Let's Build Your Account Switcher (Python Version)
+
+A command-line tool written in Python that allows users to seamlessly switch between multiple account configurations or profiles for local development, testing, or multi-user environments.
+
+## 🚀 Features
+
+- Easily manage multiple accounts (e.g., dev, staging, prod, personal)
+- CLI interface for fast switching
+- Secure storage using environment variables or encrypted files
+- Configurable for any service: Git, AWS, Firebase, databases, etc.
+- Lightweight and dependency-free (or minimal)
+
+## 🛠️ Use Cases
+
+- Switching between different GitHub accounts
+- Managing AWS credentials for different projects
+- Using different API keys or tokens per environment
+- Multi-user system with shared machine access
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/account-switcher-python.git
+cd account-switcher-python
+pip install -r requirements.txt  # If applicable
