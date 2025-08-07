@@ -1,0 +1,25 @@
+Explanation of Files:
+
+assets/: If you want to include any non-code files like images or configuration templates, you can keep them here.
+
+config/: For storing configuration files like .gitconfig, you can use this folder. You can also store tokens or encrypted credentials here (though keep in mind security measures for sensitive data).
+
+src/: Contains the source code for the actual program.
+
+account_manager.py: This will handle functions related to managing GitHub accounts (adding, removing, switching).
+
+credential_manager.py: Responsible for clearing and adding credentials in your system’s credential manager (Windows Keychain, macOS Keychain, etc.).
+
+github_cli.py: Handles interactions with GitHub’s CLI (gh), logging in and authenticating via OAuth.
+
+config_manager.py: Manages global Git configurations like setting user.name and user.email.
+
+main.py: This is the main entry point for the program where the user interacts with the program. It will call functions from the other modules based on the user's input.
+
+tests/: Unit tests and test cases for each module. Helps ensure your code is working as expected.
+
+requirements.txt: A text file listing all dependencies (e.g., requests, cryptography, pytest).
+
+README.md: Project documentation with details on installation, usage, and configuration.
+
+LICENSE: Contains the licensing information (e.g., MIT license) for your code.
