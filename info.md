@@ -22,3 +22,9 @@ account-switcher-python/
 ├── requirements.txt            # List of dependencies for Python project
 ├── README.md                   # Project documentation
 └── LICENSE                     # License information (MIT, GPL, etc.)
+
+
+
+# run the project in CMD
+
+python src/main.py "<new_username>" "<new_email>"
