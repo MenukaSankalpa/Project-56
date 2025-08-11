@@ -1,0 +1,10 @@
+# Ignore documentation files
+*.md -linguist-detectable
+docs/** linguist-vendored
+
+# Exclude config or generated data
+*.yml -linguist-detectable
+generated/** linguist-vendored
+
+# Force classify ambiguous files as Python
+custom_ext/* linguist-language=Python
