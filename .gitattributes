@@ -1,10 +1,22 @@
-# Ignore documentation files
-*.md -linguist-detectable
-docs/** linguist-vendored
+# Make sure docs/config files are counted if you want them included
+*.md linguist-detectable=true
+*.rst linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+*.json linguist-detectable=true
+*.txt linguist-detectable=true
 
-# Exclude config or generated data
-*.yml -linguist-detectable
-generated/** linguist-vendored
+# Ignore common Python vendored/dependency directories so they don't skew stats
+venv/** linguist-vendored
+env/** linguist-vendored
+__pycache__/** linguist-vendored
+build/** linguist-vendored
+dist/** linguist-vendored
+*.egg-info/** linguist-vendored
 
-# Force classify ambiguous files as Python
-custom_ext/* linguist-language=Python
+# Force detect some ambiguous file types if needed (optional)
+*.txt linguist-language=Python
+
+# Include scripts or other extensions you use that might be ignored
+*.sh linguist-language=Shell
+*.bat linguist-language=Batchfile
